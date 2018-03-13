@@ -2,7 +2,7 @@
 
 This project is inspired from the **famous [MNIST database](http://yann.lecun.com/exdb/mnist/) of handwritten digits** originally taken from scans of postal adresses on letters. This database, largely distributed among machine learning datascientists, allows to train neural networks to classify manually written digits and frequently reaching 99.5+% of accurary. It looks like this:
 
-![Extract of the MNIST data, image](mnist.jpeg)
+![Extract of the MNIST data, image|medium](mnist.jpeg)
 
 Few implementations in R have been documented, even fewer with Shiny (like, none). The novelty here, what I wanted to achieve is to allow a user to **self draw new digits on the screen** and compare with the algorithm's prediction. The algorithm would be trained on the MNIST dataset.
 
