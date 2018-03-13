@@ -17,9 +17,9 @@ The second difficulty concerned the dataset. The first neural network, inspired 
 
 My hypothesis for this failure are the fact that the original image are too *calibrated* and different from what you draw with the mouse, in the sense that the NN might be too sensitive to the plot type, image format, American style figures, etc.
 
-Eventually, I decided it was time to **create my OWN database**!, and I spend the night drawing up to **200 digits** with changes in the shape and width, stored them in a [google sheet](link here https://docs.google.com/spreadsheets/d/1Xj_bb3mxDCxTuf4KfRwarjJ-xV_z6m_90jI2ug8AXCU/) to which the Shiny application has read-and-write access, and trained again the NN from scratch. This time, it worked! I achieved **75% overall accuracy** (I don't need a F1 score because my classes are perfectly balanced) which is not bad at all for a start. 
+Eventually, I decided it was time to **create my OWN database**!, and I spend the night drawing up to **200 digits** with changes in the shape and width, stored them in a [**google sheet**](https://docs.google.com/spreadsheets/d/1Xj_bb3mxDCxTuf4KfRwarjJ-xV_z6m_90jI2ug8AXCU/) to which the Shiny application has read-and-write access, and trained again the NN from scratch. This time, it worked! I achieved **75% overall accuracy** (I don't need a F1 score because my classes are perfectly balanced) which is not bad at all for a start. 
 
-However one difficulty couldn't be overcome: a solution to embed the neural network into the Shiny application (which is [online here](https://agenis.shinyapps.io/handwriting/)). The online app just allows you to draw, write the digit with its label into the database as a sequence of zeros and ones and import the database to show some funny images: this is the average result of every "3"-labeled image:
+However one difficulty couldn't be overcome: a solution to embed the neural network into the Shiny application (which is [**online here**](https://agenis.shinyapps.io/handwriting/)). The online app just allows you to draw, write the digit with its label into the database as a sequence of zeros and ones and import the database to show some funny images: this is the average result of every "3"-labeled image:
 
 ![](generic_3.png)
 
